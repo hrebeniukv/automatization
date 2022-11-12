@@ -9,6 +9,7 @@ def test_open_login_page():
     chrome_driver.maximize_window()
     time.sleep(3)
     actual_title = chrome_driver.title
+
     assert actual_title == 'Logowanie - HalfPrice', 'You got wrong page!!!'
     chrome_driver.close()
 
